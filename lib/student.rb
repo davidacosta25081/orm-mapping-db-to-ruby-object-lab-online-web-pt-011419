@@ -118,8 +118,8 @@ def self.first_student_in_grade_10
 end
 
 def self.all_students_in_grade_X(number)
-  sql = <<-SQL 
-    SELECT * 
+  sql = <<-SQL
+    SELECT *
     FROM students
     WHERE grade = ?
   SQL
@@ -129,7 +129,7 @@ def self.all_students_in_grade_X(number)
   end
 end
     
-    
+
 
 
 
