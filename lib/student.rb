@@ -106,7 +106,7 @@ def self.first_student_in_grade_10
   sql = <<-SQL
     SELECT *
     FROM students
-    WHERE grade = 10 
+    WHERE grade = 10
     ORDER BY students.id
     LIMIT 1
   SQL
@@ -114,7 +114,7 @@ def self.first_student_in_grade_10
   student = DB[:conn].execute(sql).flatten
   student
 
-end    
+end
 
 
 
